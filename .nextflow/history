@@ -1,0 +1,5 @@
+2021-12-14 09:48:05	1.2s	zen_bose	OK	62bbd949e47091c36e5df657d9e8b037	bb9b7235-2a53-4b1c-86f9-d4a0cbf8077b	nextflow run test.nf
+2021-12-14 09:53:34	1.2s	spontaneous_agnesi	OK	16fed9d9a81ca594408ff6a66de47600	dcb3448a-361c-4528-9792-4da4afc250cb	nextflow run test2.nf
+2021-12-14 10:05:13	1.6s	deadly_joliot	OK	62bbd949e47091c36e5df657d9e8b037	10d5ae55-d4fa-42db-9993-37c9d8254764	nextflow run test.nf
+2021-12-14 10:12:40	1.8s	compassionate_wozniak	OK	c8b9c2c9603aaf25569a93554b458d60	a43d2e53-090e-4367-baf6-2ebe6bfd7c7c	nextflow run test.nf
+2021-12-14 10:18:01	1.2s	adoring_hamilton	OK	05fb9178f4110c1677bb7fed443085c3	1b49461d-9075-4e07-9971-c062956e6a01	nextflow run test.nf
