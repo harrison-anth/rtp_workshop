@@ -10,3 +10,15 @@
 2021-12-14 11:37:32	11.8s	compassionate_mayer	OK	eb71e67f7fbdc7c41baa4954b86fe629	115ee96c-7cdc-491f-b15a-f669e61a12b9	nextflow fastqc_test.nf -with-singularity test.img
 2021-12-14 11:41:32	11.9s	pensive_aryabhata	OK	3390c81ff17761120d4154d244d7e6d0	76b97e7f-f653-4832-b7ff-18ecf1e30a63	nextflow fastqc_test.nf -with-singularity test.img
 2021-12-14 11:41:58	13.2s	soggy_booth	OK	3390c81ff17761120d4154d244d7e6d0	778cf735-b17c-4346-bbf0-39cfb2410398	nextflow fastqc_test.nf -with-singularity test.img
+2021-12-14 12:03:00	-	intergalactic_linnaeus	-	a77980326e29d56b91a21061cf82026c	12a0ff1e-79c7-4474-af86-faf34e780512	nextflow multiqc_test.nf -with-singularity test.img
+2021-12-14 12:09:22	-	stoic_mcnulty	-	9f9635f57a6975ed2e9a2bbba78edaf9	14616288-9cc3-4291-abec-41dd6f5f693e	nextflow multiqc_test.nf -with-singularity test.img
+2021-12-14 12:09:58	-	admiring_bartik	-	9f9635f57a6975ed2e9a2bbba78edaf9	ff72cd0e-220a-478c-aaa7-967884c805c4	nextflow multiqc_test.nf -with-singularity test.img
+2021-12-14 12:11:52	-	goofy_kimura	-	37d09b0c8cf97c4f2a58ed226866e167	55d1a279-2918-4e3a-a802-236de16ef006	nextflow multiqc_test.nf -with-singularity test.img
+2021-12-14 12:12:14	12.2s	lethal_lamarck	OK	3390c81ff17761120d4154d244d7e6d0	78bb27cc-784c-46aa-b3df-14a58dbd71a1	nextflow fastqc_test.nf -with-singularity test.img
+2021-12-14 12:13:38	-	maniac_lovelace	-	cf87df633700a36c929efc0cfe8880cc	c6cd7c3f-9683-44e9-827d-a085caa41dad	nextflow multiqc_test.nf -with-singularity test.img
+2021-12-14 12:15:09	-	furious_mirzakhani	-	cf87df633700a36c929efc0cfe8880cc	3bd8d31b-0cd4-46eb-a087-1670d323de09	nextflow multiqc_test.nf -with-singularity test.img
+2021-12-14 12:18:08	-	dreamy_hugle	-	c61c37667b2d30785ee542c2598914b6	b6845534-1111-4451-9b74-e2f5d06c9210	nextflow multiqc_test.nf -with-singularity test.img
+2021-12-14 12:20:55	-	hopeful_solvay	-	f483f55f9f1445c7c9754c561cba26ca	39c8ff90-cd64-4cc6-9d67-f487681ec052	nextflow multi_test.nf -with-singularity test.img
+2021-12-14 12:21:23	12.9s	admiring_nobel	ERR	918dcfed1134c1189687782dfd797631	b5393747-e20d-4d06-8edb-b23eb7d57273	nextflow multi_test.nf -with-singularity test.img
+2021-12-14 12:25:30	13.4s	jovial_church	OK	7dfb298bdb986c3ff9ad48af2d36e51e	0f2f4d86-1d16-4ba4-9077-26615596edfc	nextflow multi_test.nf -with-singularity test.img
+2021-12-14 13:40:43	14.9s	wise_carlsson	OK	e7a5bb79924ae0ed556f3b8c64a18b5b	3343c38f-1e18-4da0-9abf-b36a6a8ee31a	nextflow multi_test.nf -with-singularity test.img
