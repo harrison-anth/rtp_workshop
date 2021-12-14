@@ -22,3 +22,5 @@
 2021-12-14 12:21:23	12.9s	admiring_nobel	ERR	918dcfed1134c1189687782dfd797631	b5393747-e20d-4d06-8edb-b23eb7d57273	nextflow multi_test.nf -with-singularity test.img
 2021-12-14 12:25:30	13.4s	jovial_church	OK	7dfb298bdb986c3ff9ad48af2d36e51e	0f2f4d86-1d16-4ba4-9077-26615596edfc	nextflow multi_test.nf -with-singularity test.img
 2021-12-14 13:40:43	14.9s	wise_carlsson	OK	e7a5bb79924ae0ed556f3b8c64a18b5b	3343c38f-1e18-4da0-9abf-b36a6a8ee31a	nextflow multi_test.nf -with-singularity test.img
+2021-12-14 13:53:12	1.5s	cheeky_wright	ERR	c5e6a97824609e218881be5e4718af7b4f7c89a0	64d96f00-3c12-4907-affb-4b8e832d0d83	nextflow run -r dev harrison-anth/rtp_workshop
+2021-12-14 13:55:42	2m 6s	ridiculous_lamarck	ERR	c5e6a97824609e218881be5e4718af7b4f7c89a0	2eaa5229-4921-404d-a551-4a74bed3caa1	nextflow run -r dev harrison-anth/rtp_workshop

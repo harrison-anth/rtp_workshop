@@ -1,68 +1,138 @@
-Dec-14 12:25:30.415 [main] DEBUG nextflow.cli.Launcher - $> nextflow multi_test.nf -with-singularity test.img
-Dec-14 12:25:30.462 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 21.04.1
-Dec-14 12:25:30.472 [main] INFO  nextflow.cli.CmdRun - Launching `multi_test.nf` [jovial_church] - revision: 7dfb298bdb
-Dec-14 12:25:30.480 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /home/harry-san/Downloads/nextflow_day2/rtp_workshop/nextflow.config
-Dec-14 12:25:30.480 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/harry-san/Downloads/nextflow_day2/rtp_workshop/nextflow.config
-Dec-14 12:25:30.489 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
-Dec-14 12:25:30.782 [main] DEBUG nextflow.config.ConfigBuilder - Enabling execution in Singularity container as requested by cli option `-with-singularity null`
-Dec-14 12:25:30.789 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; plugins-dir=/home/harry-san/.nextflow/plugins
-Dec-14 12:25:30.789 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
-Dec-14 12:25:30.790 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins local root: .nextflow/plr/empty
-Dec-14 12:25:30.794 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
-Dec-14 12:25:30.794 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
-Dec-14 12:25:30.796 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
-Dec-14 12:25:30.800 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
-Dec-14 12:25:30.837 [main] DEBUG nextflow.Session - Session uuid: 0f2f4d86-1d16-4ba4-9077-26615596edfc
-Dec-14 12:25:30.837 [main] DEBUG nextflow.Session - Run name: jovial_church
-Dec-14 12:25:30.838 [main] DEBUG nextflow.Session - Executor pool size: 8
-Dec-14 12:25:30.855 [main] DEBUG nextflow.cli.CmdRun - 
+Dec-14 13:53:11.565 [main] DEBUG nextflow.cli.Launcher - $> nextflow run -r dev harrison-anth/rtp_workshop
+Dec-14 13:53:11.627 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 21.04.1
+Dec-14 13:53:12.030 [main] DEBUG nextflow.scm.AssetManager - Git config: /home/harry-san/.nextflow/assets/harrison-anth/rtp_workshop/.git/config; branch: master; remote: origin; url: https://github.com/harrison-anth/rtp_workshop.git
+Dec-14 13:53:12.043 [main] DEBUG nextflow.scm.AssetManager - Git config: /home/harry-san/.nextflow/assets/harrison-anth/rtp_workshop/.git/config; branch: master; remote: origin; url: https://github.com/harrison-anth/rtp_workshop.git
+Dec-14 13:53:12.215 [main] INFO  nextflow.cli.CmdRun - Launching `harrison-anth/rtp_workshop` [cheeky_wright] - revision: c5e6a97824 [dev]
+Dec-14 13:53:12.578 [main] DEBUG nextflow.config.ConfigBuilder - Found config base: /home/harry-san/.nextflow/assets/harrison-anth/rtp_workshop/nextflow.config
+Dec-14 13:53:12.578 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /home/harry-san/Downloads/nextflow_day2/rtp_workshop/nextflow.config
+Dec-14 13:53:12.578 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/harry-san/.nextflow/assets/harrison-anth/rtp_workshop/nextflow.config
+Dec-14 13:53:12.579 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/harry-san/Downloads/nextflow_day2/rtp_workshop/nextflow.config
+Dec-14 13:53:12.582 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Dec-14 13:53:12.602 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Dec-14 13:53:12.617 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; plugins-dir=/home/harry-san/.nextflow/plugins
+Dec-14 13:53:12.618 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Dec-14 13:53:12.619 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins local root: .nextflow/plr/empty
+Dec-14 13:53:12.624 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Dec-14 13:53:12.624 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Dec-14 13:53:12.627 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Dec-14 13:53:12.632 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Dec-14 13:53:12.660 [main] DEBUG nextflow.Session - Session uuid: 64d96f00-3c12-4907-affb-4b8e832d0d83
+Dec-14 13:53:12.660 [main] DEBUG nextflow.Session - Run name: cheeky_wright
+Dec-14 13:53:12.661 [main] DEBUG nextflow.Session - Executor pool size: 8
+Dec-14 13:53:12.678 [main] DEBUG nextflow.cli.CmdRun - 
   Version: 21.04.1 build 5556
   Created: 14-05-2021 15:20 UTC (16:20 IST)
   System: Linux 5.11.0-41-generic
   Runtime: Groovy 3.0.7 on OpenJDK 64-Bit Server VM 11.0.11+9-Ubuntu-0ubuntu2.20.04
   Encoding: UTF-8 (UTF-8)
-  Process: 12905@Franklin [127.0.1.1]
-  CPUs: 8 - Mem: 31.1 GB (23.1 GB) - Swap: 2 GB (2 GB)
-Dec-14 12:25:30.866 [main] DEBUG nextflow.Session - Work-dir: /home/harry-san/Downloads/nextflow_day2/rtp_workshop/work [ext2/ext3]
-Dec-14 12:25:30.866 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/harry-san/Downloads/nextflow_day2/rtp_workshop/bin
-Dec-14 12:25:30.873 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
-Dec-14 12:25:30.879 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
-Dec-14 12:25:30.957 [main] DEBUG nextflow.Session - Session start invoked
-Dec-14 12:25:31.118 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
-Dec-14 12:25:31.124 [main] DEBUG nextflow.Session - Workflow process names [dsl1]: FASTQC, MULTIQC
-Dec-14 12:25:31.140 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: test-datasets/fastq/; pattern: *_{1,2}.fastq.gz; options: [checkIfExists:true]
-Dec-14 12:25:31.238 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Dec-14 12:25:31.238 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Dec-14 12:25:31.240 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
-Dec-14 12:25:31.243 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=31.1 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
-Dec-14 12:25:31.281 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Dec-14 12:25:31.281 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Dec-14 12:25:31.287 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
-Dec-14 12:25:31.287 [main] DEBUG nextflow.Session - Session await
-Dec-14 12:25:31.356 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Dec-14 12:25:31.358 [Task submitter] INFO  nextflow.Session - [6b/98c926] Submitted process > FASTQC (1)
-Dec-14 12:25:31.362 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Dec-14 12:25:31.362 [Task submitter] INFO  nextflow.Session - [17/39e497] Submitted process > FASTQC (3)
-Dec-14 12:25:31.368 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Dec-14 12:25:31.368 [Task submitter] INFO  nextflow.Session - [24/4b5c8f] Submitted process > FASTQC (2)
-Dec-14 12:25:31.378 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Dec-14 12:25:31.378 [Task submitter] INFO  nextflow.Session - [44/a48e3b] Submitted process > FASTQC (4)
-Dec-14 12:25:31.382 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Dec-14 12:25:31.382 [Task submitter] INFO  nextflow.Session - [5c/863567] Submitted process > FASTQC (6)
-Dec-14 12:25:31.386 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Dec-14 12:25:31.386 [Task submitter] INFO  nextflow.Session - [d4/77fbea] Submitted process > FASTQC (5)
-Dec-14 12:25:40.916 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: FASTQC (1); status: COMPLETED; exit: 0; error: -; workDir: /home/harry-san/Downloads/nextflow_day2/rtp_workshop/work/6b/98c92646a7bf29b5d46273cd4c76fd]
-Dec-14 12:25:40.931 [Task monitor] DEBUG n.util.BlockingThreadExecutorFactory - Thread pool name=FileTransfer; maxThreads=24; maxQueueSize=72; keepAlive=1m
-Dec-14 12:25:41.053 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: FASTQC (5); status: COMPLETED; exit: 0; error: -; workDir: /home/harry-san/Downloads/nextflow_day2/rtp_workshop/work/d4/77fbea295175f4eab163a5a9fb3742]
-Dec-14 12:25:41.076 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: FASTQC (2); status: COMPLETED; exit: 0; error: -; workDir: /home/harry-san/Downloads/nextflow_day2/rtp_workshop/work/24/4b5c8fcdbc6c510e1a633f34dac5f9]
-Dec-14 12:25:41.101 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 6; name: FASTQC (6); status: COMPLETED; exit: 0; error: -; workDir: /home/harry-san/Downloads/nextflow_day2/rtp_workshop/work/5c/863567e04fe560cdcc74df330a6406]
-Dec-14 12:25:41.896 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: FASTQC (3); status: COMPLETED; exit: 0; error: -; workDir: /home/harry-san/Downloads/nextflow_day2/rtp_workshop/work/17/39e49769b5f9f1bea82c6756391477]
-Dec-14 12:25:42.054 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: FASTQC (4); status: COMPLETED; exit: 0; error: -; workDir: /home/harry-san/Downloads/nextflow_day2/rtp_workshop/work/44/a48e3b4e4ee7c9c366c82af85cb34b]
-Dec-14 12:25:42.075 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Dec-14 12:25:42.075 [Task submitter] INFO  nextflow.Session - [d2/490284] Submitted process > MULTIQC
-Dec-14 12:25:43.257 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 7; name: MULTIQC; status: COMPLETED; exit: 0; error: -; workDir: /home/harry-san/Downloads/nextflow_day2/rtp_workshop/work/d2/49028426d739e16e0fea3bf33d2cf9]
-Dec-14 12:25:43.262 [main] DEBUG nextflow.Session - Session await > all process finished
-Dec-14 12:25:43.357 [main] DEBUG nextflow.Session - Session await > all barriers passed
-Dec-14 12:25:43.368 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=7; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=1m; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=6; peakCpus=6; peakMemory=0; ]
-Dec-14 12:25:43.447 [main] DEBUG nextflow.CacheDB - Closing CacheDB done
-Dec-14 12:25:43.451 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
+  Process: 17886@Franklin [127.0.1.1]
+  CPUs: 8 - Mem: 31.1 GB (23.2 GB) - Swap: 2 GB (2 GB)
+Dec-14 13:53:12.687 [main] DEBUG nextflow.Session - Work-dir: /home/harry-san/Downloads/nextflow_day2/rtp_workshop/work [ext2/ext3]
+Dec-14 13:53:12.687 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/harry-san/.nextflow/assets/harrison-anth/rtp_workshop/bin
+Dec-14 13:53:12.694 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Dec-14 13:53:12.701 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Dec-14 13:53:12.789 [main] DEBUG nextflow.Session - Session start invoked
+Dec-14 13:53:12.994 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Dec-14 13:53:13.014 [main] DEBUG nextflow.Session - Workflow process names [dsl1]: FASTQC, MULTIQC
+Dec-14 13:53:13.046 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: test-datasets/fastq/; pattern: *_{1,2}.fastq.gz; options: [checkIfExists:true]
+Dec-14 13:53:13.133 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Dec-14 13:53:13.133 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Dec-14 13:53:13.136 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Dec-14 13:53:13.140 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=31.1 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
+Dec-14 13:53:13.191 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Dec-14 13:53:13.192 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Dec-14 13:53:13.197 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
+Dec-14 13:53:13.197 [main] DEBUG nextflow.Session - Session await
+Dec-14 13:53:13.289 [Actor Thread 4] ERROR nextflow.processor.TaskProcessor - Error executing process > 'FASTQC (2)'
+
+Caused by:
+  java.io.IOException: Failed to create Singularity cache directory: /data/containers -- Make sure a file with the same does not exist and you have write permission
+
+java.lang.IllegalStateException: org.codehaus.groovy.runtime.InvokerInvocationException: java.io.IOException: Failed to create Singularity cache directory: /data/containers -- Make sure a file with the same does not exist and you have write permission
+	at nextflow.container.SingularityCache.getCachePathFor(SingularityCache.groovy:304)
+	at nextflow.container.SingularityCache$getCachePathFor$1.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+	at nextflow.container.ContainerHandler.createSingularityCache(ContainerHandler.groovy:85)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:194)
+	at nextflow.container.ContainerHandler.normalizeImageName(ContainerHandler.groovy:68)
+	at nextflow.container.ContainerHandler$normalizeImageName.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+	at nextflow.processor.TaskRun.getContainer(TaskRun.groovy:587)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at org.codehaus.groovy.runtime.metaclass.MethodMetaProperty$GetBeanMethodMetaProperty.getProperty(MethodMetaProperty.java:76)
+	at org.codehaus.groovy.runtime.callsite.GetEffectivePogoPropertySite.callGroovyObjectGetProperty(GetEffectivePogoPropertySite.java:68)
+	at nextflow.processor.TaskProcessor.createTaskHashKey(TaskProcessor.groovy:1939)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at nextflow.processor.TaskProcessor.invokeTask(TaskProcessor.groovy:591)
+	at nextflow.processor.InvokeTaskAdapter.call(InvokeTaskAdapter.groovy:59)
+	at groovyx.gpars.dataflow.operator.DataflowOperatorActor.startTask(DataflowOperatorActor.java:120)
+	at groovyx.gpars.dataflow.operator.ForkingDataflowOperatorActor.access$001(ForkingDataflowOperatorActor.java:35)
+	at groovyx.gpars.dataflow.operator.ForkingDataflowOperatorActor$1.run(ForkingDataflowOperatorActor.java:58)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.codehaus.groovy.runtime.InvokerInvocationException: java.io.IOException: Failed to create Singularity cache directory: /data/containers -- Make sure a file with the same does not exist and you have write permission
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:113)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokePogoMethod(InvokerHelper.java:1029)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethod(InvokerHelper.java:1012)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethodSafe(InvokerHelper.java:101)
+	at nextflow.container.SingularityCache$_getLazyImagePath_closure2.doCall(SingularityCache.groovy:281)
+	at nextflow.container.SingularityCache$_getLazyImagePath_closure2.call(SingularityCache.groovy)
+	at groovyx.gpars.dataflow.LazyDataflowVariable$1.run(LazyDataflowVariable.java:70)
+	... 3 common frames omitted
+Caused by: java.io.IOException: Failed to create Singularity cache directory: /data/containers -- Make sure a file with the same does not exist and you have write permission
+	at nextflow.container.SingularityCache.checkDir(SingularityCache.groovy:108)
+	at nextflow.container.SingularityCache.getCacheDir(SingularityCache.groovy:131)
+	at nextflow.container.SingularityCache.localImagePath(SingularityCache.groovy:161)
+	at nextflow.container.SingularityCache.downloadSingularityImage(SingularityCache.groovy:178)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	... 12 common frames omitted
+Dec-14 13:53:13.296 [Actor Thread 4] DEBUG nextflow.Session - Session aborted -- Cause: org.codehaus.groovy.runtime.InvokerInvocationException: java.io.IOException: Failed to create Singularity cache directory: /data/containers -- Make sure a file with the same does not exist and you have write permission
+Dec-14 13:53:13.305 [Actor Thread 4] DEBUG nextflow.Session - The following nodes are still active:
+[process] FASTQC
+  status=ACTIVE
+  port 0: (queue) closed; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] MULTIQC
+  status=ACTIVE
+  port 0: (value) OPEN  ; channel: htmls
+  port 1: (cntrl) -     ; channel: $
+
+Dec-14 13:53:13.306 [main] DEBUG nextflow.Session - Session await > all process finished
+Dec-14 13:53:13.307 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Dec-14 13:53:13.311 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=0; peakCpus=0; peakMemory=0; ]
+Dec-14 13:53:13.509 [main] DEBUG nextflow.CacheDB - Closing CacheDB done
+Dec-14 13:53:13.524 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
