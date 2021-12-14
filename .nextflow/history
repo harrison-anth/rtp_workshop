@@ -6,3 +6,7 @@
 2021-12-14 11:06:23	871ms	hungry_curie	OK	16fed9d9a81ca594408ff6a66de47600	fa099320-7ef8-4377-90eb-c6bf5a568cd0	nextflow run test2.nf
 2021-12-14 11:15:56	950ms	nostalgic_noether	OK	e27bf9529c9183511059a870ae806920	e790b382-75f7-4097-8a2d-6ca9c452ec86	nextflow test3.nf
 2021-12-14 11:32:32	12.8s	kickass_sax	OK	eb71e67f7fbdc7c41baa4954b86fe629	fb5a4f6a-4518-45ca-9884-ced12311143d	nextflow run fastqc_test.nf -with-singularity test.img
+2021-12-14 11:37:00	1.5s	elated_avogadro	OK	05fb9178f4110c1677bb7fed443085c3	e27250b2-bdab-4686-acb2-776c7ce7f4d1	nextflow run test.nf -with-singularity test.img
+2021-12-14 11:37:32	11.8s	compassionate_mayer	OK	eb71e67f7fbdc7c41baa4954b86fe629	115ee96c-7cdc-491f-b15a-f669e61a12b9	nextflow fastqc_test.nf -with-singularity test.img
+2021-12-14 11:41:32	11.9s	pensive_aryabhata	OK	3390c81ff17761120d4154d244d7e6d0	76b97e7f-f653-4832-b7ff-18ecf1e30a63	nextflow fastqc_test.nf -with-singularity test.img
+2021-12-14 11:41:58	13.2s	soggy_booth	OK	3390c81ff17761120d4154d244d7e6d0	778cf735-b17c-4346-bbf0-39cfb2410398	nextflow fastqc_test.nf -with-singularity test.img

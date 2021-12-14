@@ -1,36 +1,63 @@
-Dec-14 11:06:22.963 [main] DEBUG nextflow.cli.Launcher - $> nextflow run test2.nf
-Dec-14 11:06:23.020 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 21.04.1
-Dec-14 11:06:23.033 [main] INFO  nextflow.cli.CmdRun - Launching `test2.nf` [hungry_curie] - revision: 16fed9d9a8
-Dec-14 11:06:23.073 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; plugins-dir=/home/harry-san/.nextflow/plugins
-Dec-14 11:06:23.074 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
-Dec-14 11:06:23.075 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins local root: .nextflow/plr/empty
-Dec-14 11:06:23.080 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
-Dec-14 11:06:23.081 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
-Dec-14 11:06:23.083 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
-Dec-14 11:06:23.089 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
-Dec-14 11:06:23.120 [main] DEBUG nextflow.Session - Session uuid: fa099320-7ef8-4377-90eb-c6bf5a568cd0
-Dec-14 11:06:23.121 [main] DEBUG nextflow.Session - Run name: hungry_curie
-Dec-14 11:06:23.122 [main] DEBUG nextflow.Session - Executor pool size: 8
-Dec-14 11:06:23.143 [main] DEBUG nextflow.cli.CmdRun - 
+Dec-14 11:37:31.814 [main] DEBUG nextflow.cli.Launcher - $> nextflow fastqc_test.nf -with-singularity test.img
+Dec-14 11:37:31.874 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 21.04.1
+Dec-14 11:37:31.886 [main] INFO  nextflow.cli.CmdRun - Launching `fastqc_test.nf` [compassionate_mayer] - revision: eb71e67f7f
+Dec-14 11:37:31.894 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /home/harry-san/Downloads/nextflow_day2/rtp_workshop/nextflow.config
+Dec-14 11:37:31.895 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/harry-san/Downloads/nextflow_day2/rtp_workshop/nextflow.config
+Dec-14 11:37:31.908 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Dec-14 11:37:32.201 [main] DEBUG nextflow.config.ConfigBuilder - Enabling execution in Singularity container as requested by cli option `-with-singularity null`
+Dec-14 11:37:32.206 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; plugins-dir=/home/harry-san/.nextflow/plugins
+Dec-14 11:37:32.207 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Dec-14 11:37:32.208 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins local root: .nextflow/plr/empty
+Dec-14 11:37:32.211 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Dec-14 11:37:32.212 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Dec-14 11:37:32.213 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Dec-14 11:37:32.218 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Dec-14 11:37:32.255 [main] DEBUG nextflow.Session - Session uuid: 115ee96c-7cdc-491f-b15a-f669e61a12b9
+Dec-14 11:37:32.255 [main] DEBUG nextflow.Session - Run name: compassionate_mayer
+Dec-14 11:37:32.255 [main] DEBUG nextflow.Session - Executor pool size: 8
+Dec-14 11:37:32.272 [main] DEBUG nextflow.cli.CmdRun - 
   Version: 21.04.1 build 5556
   Created: 14-05-2021 15:20 UTC (16:20 IST)
   System: Linux 5.11.0-41-generic
   Runtime: Groovy 3.0.7 on OpenJDK 64-Bit Server VM 11.0.11+9-Ubuntu-0ubuntu2.20.04
   Encoding: UTF-8 (UTF-8)
-  Process: 5295@Franklin [127.0.1.1]
-  CPUs: 8 - Mem: 31.1 GB (25.1 GB) - Swap: 2 GB (2 GB)
-Dec-14 11:06:23.156 [main] DEBUG nextflow.Session - Work-dir: /home/harry-san/Downloads/nextflow_day2/rtp_workshop/work [ext2/ext3]
-Dec-14 11:06:23.156 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/harry-san/Downloads/nextflow_day2/rtp_workshop/bin
-Dec-14 11:06:23.163 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
-Dec-14 11:06:23.171 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
-Dec-14 11:06:23.259 [main] DEBUG nextflow.Session - Session start invoked
-Dec-14 11:06:23.606 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
-Dec-14 11:06:23.617 [main] DEBUG nextflow.Session - Workflow process names [dsl1]: 
-Dec-14 11:06:23.637 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: test-datasets/fastq/; pattern: *_{1,2}.fastq.gz; options: [checkIfExists:true]
-Dec-14 11:06:23.706 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
-Dec-14 11:06:23.706 [main] DEBUG nextflow.Session - Session await
-Dec-14 11:06:23.706 [main] DEBUG nextflow.Session - Session await > all process finished
-Dec-14 11:06:23.706 [main] DEBUG nextflow.Session - Session await > all barriers passed
-Dec-14 11:06:23.714 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=0; peakCpus=0; peakMemory=0; ]
-Dec-14 11:06:23.870 [main] DEBUG nextflow.CacheDB - Closing CacheDB done
-Dec-14 11:06:23.877 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
+  Process: 7859@Franklin [127.0.1.1]
+  CPUs: 8 - Mem: 31.1 GB (25 GB) - Swap: 2 GB (2 GB)
+Dec-14 11:37:32.282 [main] DEBUG nextflow.Session - Work-dir: /home/harry-san/Downloads/nextflow_day2/rtp_workshop/work [ext2/ext3]
+Dec-14 11:37:32.282 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/harry-san/Downloads/nextflow_day2/rtp_workshop/bin
+Dec-14 11:37:32.288 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Dec-14 11:37:32.294 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Dec-14 11:37:32.378 [main] DEBUG nextflow.Session - Session start invoked
+Dec-14 11:37:32.508 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Dec-14 11:37:32.512 [main] DEBUG nextflow.Session - Workflow process names [dsl1]: FASTQC
+Dec-14 11:37:32.528 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: test-datasets/fastq/; pattern: *_{1,2}.fastq.gz; options: [checkIfExists:true]
+Dec-14 11:37:32.603 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Dec-14 11:37:32.603 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Dec-14 11:37:32.605 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Dec-14 11:37:32.608 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=31.1 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
+Dec-14 11:37:32.651 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
+Dec-14 11:37:32.651 [main] DEBUG nextflow.Session - Session await
+Dec-14 11:37:32.730 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Dec-14 11:37:32.732 [Task submitter] INFO  nextflow.Session - [89/259cfc] Submitted process > FASTQC (3)
+Dec-14 11:37:32.738 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Dec-14 11:37:32.738 [Task submitter] INFO  nextflow.Session - [a8/ccac03] Submitted process > FASTQC (1)
+Dec-14 11:37:32.742 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Dec-14 11:37:32.743 [Task submitter] INFO  nextflow.Session - [75/2db986] Submitted process > FASTQC (2)
+Dec-14 11:37:32.746 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Dec-14 11:37:32.746 [Task submitter] INFO  nextflow.Session - [a0/0b58eb] Submitted process > FASTQC (6)
+Dec-14 11:37:32.749 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Dec-14 11:37:32.750 [Task submitter] INFO  nextflow.Session - [c9/946bfd] Submitted process > FASTQC (4)
+Dec-14 11:37:32.753 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Dec-14 11:37:32.753 [Task submitter] INFO  nextflow.Session - [87/026b68] Submitted process > FASTQC (5)
+Dec-14 11:37:42.393 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: FASTQC (1); status: COMPLETED; exit: 0; error: -; workDir: /home/harry-san/Downloads/nextflow_day2/rtp_workshop/work/a8/ccac034b6e15e0a06373671a5b1e99]
+Dec-14 11:37:42.410 [Task monitor] DEBUG n.util.BlockingThreadExecutorFactory - Thread pool name=FileTransfer; maxThreads=24; maxQueueSize=72; keepAlive=1m
+Dec-14 11:37:43.253 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: FASTQC (3); status: COMPLETED; exit: 0; error: -; workDir: /home/harry-san/Downloads/nextflow_day2/rtp_workshop/work/89/259cfcd0654a429df001da42fdfb63]
+Dec-14 11:37:43.403 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: FASTQC (2); status: COMPLETED; exit: 0; error: -; workDir: /home/harry-san/Downloads/nextflow_day2/rtp_workshop/work/75/2db9865226a1efd9cd9aa6a05c104e]
+Dec-14 11:37:43.480 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: FASTQC (5); status: COMPLETED; exit: 0; error: -; workDir: /home/harry-san/Downloads/nextflow_day2/rtp_workshop/work/87/026b683779a45a743c5621aa83c85e]
+Dec-14 11:37:43.561 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 6; name: FASTQC (6); status: COMPLETED; exit: 0; error: -; workDir: /home/harry-san/Downloads/nextflow_day2/rtp_workshop/work/a0/0b58eb36da47a36d96a2513a68f1dc]
+Dec-14 11:37:43.567 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: FASTQC (4); status: COMPLETED; exit: 0; error: -; workDir: /home/harry-san/Downloads/nextflow_day2/rtp_workshop/work/c9/946bfdda4d8a2e770f814a5a06ee3b]
+Dec-14 11:37:43.573 [main] DEBUG nextflow.Session - Session await > all process finished
+Dec-14 11:37:43.660 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Dec-14 11:37:43.672 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=6; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=1m 3s; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=6; peakCpus=6; peakMemory=0; ]
+Dec-14 11:37:43.826 [main] DEBUG nextflow.CacheDB - Closing CacheDB done
+Dec-14 11:37:43.838 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
