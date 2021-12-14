@@ -1,3 +1,4 @@
 *.img
 work/
 test-datasets/
+fastqc/
