@@ -24,3 +24,7 @@
 2021-12-14 13:40:43	14.9s	wise_carlsson	OK	e7a5bb79924ae0ed556f3b8c64a18b5b	3343c38f-1e18-4da0-9abf-b36a6a8ee31a	nextflow multi_test.nf -with-singularity test.img
 2021-12-14 13:53:12	1.5s	cheeky_wright	ERR	c5e6a97824609e218881be5e4718af7b4f7c89a0	64d96f00-3c12-4907-affb-4b8e832d0d83	nextflow run -r dev harrison-anth/rtp_workshop
 2021-12-14 13:55:42	2m 6s	ridiculous_lamarck	ERR	c5e6a97824609e218881be5e4718af7b4f7c89a0	2eaa5229-4921-404d-a551-4a74bed3caa1	nextflow run -r dev harrison-anth/rtp_workshop
+2021-12-14 14:00:07	11.3s	gloomy_mendel	ERR	c5e6a97824609e218881be5e4718af7b4f7c89a0	7fe12272-32a3-4391-b582-3573a2c3b129	nextflow run -r dev harrison-anth/rtp_workshop
+2021-12-14 14:00:50	8m 25s	voluminous_poincare	ERR	d44f29fe093b9ab8d950f92b976d4a824eede6cf	f91ae92d-a5f5-4697-bdf6-597386b7689a	nextflow run -r dev harrison-anth/rtp_workshop
+2021-12-14 14:21:16	1.2s	nostalgic_booth	ERR	e7a5bb79924ae0ed556f3b8c64a18b5b	875d047d-918e-4317-afa9-96aab8add699	nextflow run main.nf -with-singularity test.img -c nextflow.config
+2021-12-14 14:25:18	1.1s	sick_thompson	ERR	e7a5bb79924ae0ed556f3b8c64a18b5b	49dc9a9a-c6af-41d5-ae62-6fd7a7e2d47b	nextflow run multiqc_test.nf -with-singularity test.img -c nextflow.config
